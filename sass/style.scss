@@ -1,0 +1,12 @@
+// Bootstrap
+@import '../node_modules/bootstrap-scss/bootstrap';
+// Variables
+@import './others/variables';
+// Slick slider
+@import '../node_modules/slick-slider/slick/slick-theme.scss';
+@import '../node_modules/slick-slider/slick/slick.scss';
+// Own styles
+@import './components/header';
+@import './components/nav';
+@import './components/mainslider';
+@import './components/tiles';

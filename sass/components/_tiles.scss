@@ -1,0 +1,35 @@
+.tiles{
+  &>div{
+    justify-content: space-evenly;
+  }
+  .item{
+    display: block;
+    text-align: center;
+    padding: 4rem 1rem 6rem 1rem;
+    box-shadow: 0 0 50px -30px black;
+    background-color: white;
+    border-bottom:5px solid $primary;
+    border-top:5px solid white;
+    transition: .2s linear all;
+    transform: translateY(-50px);
+    i{
+      font-size: 3rem;
+      color: $primary;
+    }
+    h3{
+      margin-top: 1rem;
+      font-size: 1.8rem;
+      color: black;
+    }
+    &:hover{
+      background-color: $primary;
+      text-decoration: none;
+      i{
+        color: white;
+      }
+      h3{
+        color: white;
+      }
+    }
+  }
+}

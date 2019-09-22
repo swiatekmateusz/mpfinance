@@ -1,0 +1,49 @@
+.header{
+  background-color: $primary;
+  .header-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    .left-info{
+      display: flex;
+      font-size: 1rem;
+      .item{
+        margin-right: 1rem;
+        p{
+          display: inline;
+          color: white;
+        }
+        a{
+          transition: .1s linear all;
+          color: white;
+          &:hover{
+            text-decoration: none;
+            color: $primary-bright;
+            transform: scale(1.2);
+          }
+        }
+        i{
+          color: rgba($color: white, $alpha: .5);
+        }
+      }
+    }
+    .right-info{
+      display: flex;
+      .item{
+        font-size: 1rem;
+        margin: 0 .8rem;
+        i{
+          color: white;
+          display: inline-block;
+          transition: .15s linear all;
+          &:hover{
+            transform: scale(1.5);
+            &::before{
+              color: $primary-bright;
+            }
+          }
+        }
+      }
+    }
+  }
+}
