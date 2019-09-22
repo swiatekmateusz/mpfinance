@@ -12,6 +12,7 @@
     border-top:5px solid white;
     transition: .2s linear all;
     transform: translateY(-50px);
+    overflow: hidden;
     i{
       font-size: 3rem;
       color: $primary;
@@ -21,6 +22,15 @@
       font-size: 1.8rem;
       color: black;
     }
+    span{
+      position: absolute;
+      left: -100%;
+      font-size: 1.2rem;
+      transition: .3s linear all;
+      color: white;
+      text-transform: uppercase;
+      border-radius: .3rem;
+    }
     &:hover{
       background-color: $primary;
       text-decoration: none;
@@ -29,6 +39,10 @@
       }
       h3{
         color: white;
+      }
+      span{
+        left: 50%;
+        transform: translatex(-50%);
       }
     }
   }
